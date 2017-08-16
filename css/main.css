@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+#contenedor{
+	border: 3px solid #555;
+	margin-left: 120px;
+ 	width: 950px; 
+    height: 550px;
+    position: relative;
+}
+#grass {
+     width: 950px; 
+     height: 100px; 
+     background: #018E0B ;
+     position: absolute;
+     bottom: 0;
+}
+
+#techo {
+    width: 250px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid #AE330E ;
+    position: relative;
+    left: 500px
+}
+#pared {
+     width: 300px; 
+     height:200px; 
+     border: 3px solid #900C3F;
+     background: #900C3F;
+     position: absolute;
+     left: 520px
+}
+.circulo {
+	border-radius: 50%;
+}
+.sol {
+	width: 150px; 
+    height: 150px; 
+    border: 3px solid #F4F808;
+    background: #F4F808;
+}
+
+.humito {
+	width: 10px; 
+    height: 10px; 
+    border: 3px solid white;
+    background: #B5B6A0;
+    border-radius: 0 50% / 0 100%;
+}
+#puerta {
+	width: 50px;
+	height: 60px;
+	border: 3px solid #B2532D;
+	background: #B2532D;
+	position: relative;
+	left: 940px
+	bottom: 100px;
+}
+ #chimenea {
+ 	width: 20px;
+	height: 60px;
+	background: black;
+	position: absolute;
+	right: 300px;
+	bottom: 100px;
+ }
