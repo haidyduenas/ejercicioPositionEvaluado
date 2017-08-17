@@ -24,8 +24,10 @@
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
     border-bottom: 100px solid #AE330E ;
-    position: relative;
-    left: 500px
+    position: absolute;
+    left: 390px;
+    bottom:250px;
+    z-index: 2;
 }
 #pared {
      width: 300px; 
@@ -33,33 +35,56 @@
      border: 3px solid #900C3F;
      background: #900C3F;
      position: absolute;
-     left: 520px
+     left: 420px;
+     bottom: 70px;
+     z-index: 1;
 }
 .circulo {
 	border-radius: 50%;
 }
 .sol {
-	width: 150px; 
-    height: 150px; 
-    border: 3px solid #F4F808;
+	width: 100px; 
+    height: 100px; 
     background: #F4F808;
+    position: absolute;
+    top: 30px;
+    left:30px;
 }
-
-.humito {
-	width: 10px; 
-    height: 10px; 
-    border: 3px solid white;
+#contHumo{
+	position: absolute;
+    top: 189px;
+    z-index: 6;
+}
+#humo1{
+	position: relative;
+	left: 680px;
+	width: 15px; 
+    height: 15px; 
     background: #B5B6A0;
-    border-radius: 0 50% / 0 100%;
+}
+#humo2{
+	position: relative;
+	left :662px;
+	width: 15px; 
+    height: 15px; 
+    background: #B5B6A0;
+    left: 660
+}
+#humo3{
+	position: relative;
+	left: 653px;
+	width: 15px; 
+    height: 15px; 
+    background: #B5B6A0;
 }
 #puerta {
-	width: 50px;
-	height: 60px;
-	border: 3px solid #B2532D;
+	width:80px; 
+    height: 150px;
 	background: #B2532D;
-	position: relative;
-	left: 940px
-	bottom: 100px;
+	position: absolute;
+	left: 530px;
+	bottom: 70px;
+	 z-index: 1;
 }
  #chimenea {
  	width: 20px;
@@ -67,5 +92,40 @@
 	background: black;
 	position: absolute;
 	right: 300px;
-	bottom: 100px;
+ 	bottom: 280px;
+    z-index: 3;
  }
+
+ #corazon { 
+	position: absolute;
+	left: 550px;
+	bottom: 200px;
+	z-index: 1;
+
+}
+#corazon:before, #corazon:after {
+   position: absolute;
+   content: "";
+   left: 20px; top: 0;
+   width: 20px;
+   height: 35px;
+   background: red;
+   border-radius: 50px 50px 0 0;
+   transform: rotate(-45deg);
+   transform-origin: 0 100%;
+}
+#corazon:after { 
+	left: 0; 
+   transform: rotate(45deg);
+   transform-origin :100% 100%;
+}
+
+#ventana{
+	width: 45px;
+    height: 45px;
+    background-color: #2ac0f7;
+    position: absolute;
+    left: 230px;
+    bottom: 120px;
+    z-index: 5;
+}
